@@ -30,12 +30,15 @@
         * Item Detailed Information
         * Amount Selector
         * Add Item Button 
-    3. Cart
+    3. Cart 
+    ![screenshot](public/readme/readme_02.png)
         * Show Modal When Clicked
         * Show 'Added Item List' & 'Total Amount'
         * Close Button & Order Button
         * Bump Animation When Item is Added
 
 ![screenshot](public/readme/readme_01.png)
-![screenshot](public/readme/readme_02.png)
+
+<br>
+
 ![screenshot](public/readme/readme_03.png)
