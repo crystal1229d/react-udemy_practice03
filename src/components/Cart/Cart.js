@@ -11,8 +11,12 @@ const Cart = props => {
     const totalAmount = `$${cartContext.totalAmount.toFixed(2)}`
     const hasItems = cartContext.items.length > 0
 
-    const cartItemAddHandler = item => { }
-    const cartItemRemoveHandler = id => { }
+    const cartItemAddHandler = item => { 
+        cartContext.addItem({ ...item, amount: 1 })
+    }
+    const cartItemRemoveHandler = id => { 
+        cartContext.removeItem(id)
+    }
 
     const cartItems =
         (<ul className={classes['cart-items']}>
@@ -22,8 +26,8 @@ const Cart = props => {
                     name={item.name}
                     amount={item.amount}
                     price={item.price}
-                    onAdd={cartItemAddHandler.bind(null, item.id)}  // bind 호출해 null 과 item.id 를 바인드 : 추가되거나 삭제된 항목의 id 가 removeHandler 로 전달된다
-                    onRemove={cartItemRemoveHandler.bind(null, item)}
+                    onAdd={cartItemAddHandler.bind(null, item)}  // bind 호출해 null 과 item.id 를 바인드 : 추가되거나 삭제된 항목의 id 가 removeHandler 로 전달된다
+                    onRemove={cartItemRemoveHandler.bind(null, item.id)}
                 />
             )) }
         </ul>)
