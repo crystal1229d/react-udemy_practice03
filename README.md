@@ -25,12 +25,12 @@
 <br>
 
 * <strong>Features</strong>
-    1. Banner Image & Banner Message
-    2. Item List 
+    * Banner Image & Banner Message
+    * Item List 
         * Item Detailed Information
         * Amount Selector
         * Add Item Button 
-    3. Cart 
+    * Cart 
     ![screenshot](public/readme/readme_02.png)
         * Show Modal When Clicked
         * Show 'Added Item List' & 'Total Amount'
